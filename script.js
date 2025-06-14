@@ -20,3 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     htmlTag.setAttribute('data-bs-theme', savedTheme);
     updateUI(savedTheme);
 });
+
+const sendBtn = document.getElementById('sendBtn');
+
+sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("There's no functionalities yet");
+});
