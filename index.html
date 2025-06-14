@@ -21,11 +21,28 @@
                         anthonyA1214
                     </a>
 
+                    <div class="d-flex align-items-center ms-auto">
+                        <!-- Contact me button -->
+                        <a class="btn btn-outline-primary d-none d-lg-inline me-2" href="contact.html">
+                            <i class="bi bi-envelope-fill"></i> Contact Me
+                        </a>
+
+                        <!-- Toggle dark light mode -->
+                        <button class="btn btn-outline-secondary my-2" id="themeToggle">
+                            <i class="bi bi-moon-stars-fill"></i> 
+                        </button>
+
+                        <!-- Burger icon -->
+                        <button class="navbar-toggler ms-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>  
+
                     <!-- Navitems -->
-                    <div class="collapse navbar-collapse justify-content-center border px-3" id="navbarNav">
+                    <div class="collapse navbar-collapse justify-content-center border mt-2 mt-lg-0 px-md-3" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">
+                                <a class="nav-link active" aria-current="page" href="index.html">
                                     <i class="bi bi-house-door-fill mx-2"></i>Home
                                 </a>
                             </li>
@@ -39,18 +56,13 @@
                                     <i class="bi bi-person-vcard-fill mx-2"></i>About Me
                                 </a>
                             </li>
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="contact.html">
+                                    <i class="bi bi-envelope-fill mx-2"></i>Contact Me
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-
-                    <!-- Toggle dark light mode -->
-                    <button class="btn btn-outline-secondary ms-auto my-2" id="themeToggle">
-                        <i class="bi bi-moon-stars-fill"></i> 
-                    </button>
-
-                    <!-- Burger icon -->
-                    <button class="navbar-toggler ms-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </div>                    
                 </div>
             </nav>
 
@@ -63,6 +75,7 @@
                     <p class="fw-bold mx-2 mb-0 lead">Hello, I'm Anthony!</p>
                 </div>
             </div>
+
             <div class="d-flex flex-column mb-3">
                 <!-- TYPING ANIMATION -->
                 <div class="d-flex justify-content-center align-items-center p-2">
@@ -71,22 +84,22 @@
 
                 <div class="d-flex justify-content-center align-items-center p-2">
                     <p class="h1 display-1 fw-semibold text-nowrap" id="hero-1">3<sup class="fs-1">RD</sup> YEAR</p>
-                    <p class="fs-4 mx-3 text-nowrap"> // BSCS Student</p>
+                    <p class="fs-4 mx-3 text-nowrap"># BSCS Student</p>
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center p-2">               
-                    <p class="fs-4 mx-3 text-nowrap"> Learner //</p>
+                    <p class="fs-4 mx-3 text-nowrap"># Learner</p>
                     <p class="h1 display-1 fw-semibold text-nowrap" id="hero-2">PASSIONATE</p>
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center p-2">
                     <p class="h1 display-1 fw-semibold text-nowrap" id="hero-3">BUILDING</p>
-                    <p class="fs-4 mx-3 text-nowrap"> // My Homepage</p>
+                    <p class="fs-4 mx-3 text-nowrap"># My Homepage</p>
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center p-2">
                     <p class="h1 display-1 fw-semibold text-nowrap" id="hero-4">CS50x</p>
-                    <p class="fs-4 mx-3 text-nowrap"> // PSET 8</p>
+                    <p class="fs-4 mx-3 text-nowrap"># PSET 8</p>
                 </div>
             </div>
 
@@ -109,9 +122,11 @@
             </div>
         </main>
         
+        <!-- FOOTER -->
         <footer class="text-center py-3 border-top">
             <small class="text-muted">© 2025 Anthony Amiluddin, CS50x PSET 8 Homepage.</small>
         </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>

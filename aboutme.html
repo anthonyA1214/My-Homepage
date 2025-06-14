@@ -10,48 +10,117 @@
         <link rel="icon" type="image/png" href="images/logo-dark.png" />
         <title>anthonyA1214</title>
     </head>
-    <body>
-        <!-- Navigation bar-->
-        <nav class="navbar navbar-expand-lg border-bottom bg-transparent">
-            <div class="container-fluid ">
-                <!-- logo brand -->
-                <a class="navbar-brand rounded-pill border px-3 py-1" href="#">
-                    <img src="images/logo-dark.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" id="logo">
-                    anthonyA1214
-                </a>
+    <body class="d-flex flex-column min-vh-100">
+        <main class="d-flex flex-column flex-grow-1">
+            <!-- Navigation bar-->
+            <nav class="navbar navbar-expand-lg border-bottom bg-transparent">
+                <div class="container-fluid ">
+                    <!-- logo brand -->
+                    <a class="navbar-brand d-flex align-items-center rounded-pill border px-3 py-1" href="#">
+                        <img src="images/logo-dark.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-1" id="logo">
+                        anthonyA1214
+                    </a>
 
-                <!-- Navitems -->
-                <div class="collapse navbar-collapse justify-content-center border px-3" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <i class="bi bi-house-door-fill mx-2"></i>Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">
-                                <i class="bi bi-suitcase-lg-fill mx-2"></i>Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <i class="bi bi-person-vcard-fill mx-2"></i>About Me
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="d-flex align-items-center ms-auto">
+                        <!-- Contact me button -->
+                        <a class="btn btn-outline-primary d-none d-lg-inline me-2" href="contact.html">
+                            <i class="bi bi-envelope-fill"></i> Contact Me
+                        </a>
+
+                        <!-- Toggle dark light mode -->
+                        <button class="btn btn-outline-secondary my-2" id="themeToggle">
+                            <i class="bi bi-moon-stars-fill"></i> 
+                        </button>
+
+                        <!-- Burger icon -->
+                        <button class="navbar-toggler ms-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>  
+
+                    <!-- Navitems -->
+                    <div class="collapse navbar-collapse justify-content-center border mt-2 mt-lg-0 px-md-3" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    <i class="bi bi-house-door-fill mx-2"></i>Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">
+                                    <i class="bi bi-suitcase-lg-fill mx-2"></i>Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="aboutme.html">
+                                    <i class="bi bi-person-vcard-fill mx-2"></i>About Me
+                                </a>
+                            </li>
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link" href="contact.html">
+                                    <i class="bi bi-envelope-fill mx-2"></i>Contact Me
+                                </a>
+                            </li>
+                        </ul>
+                    </div>                    
                 </div>
+            </nav>
 
-                <!-- Toggle dark light mode -->
-                <button class="btn btn-outline-secondary ms-auto my-2" id="themeToggle">
-                    <i class="bi bi-moon-stars-fill"></i> 
-                </button>
+            <div class="d-flex flex-column mt-5">
+                <div class="d-flex p-2 ms-md-5">
+                    <h1 class="display-1 ms-md-5 border-bottom text-center text-md-start">Hello! I'm Anthony Amiluddin 👋🏻</h1>
+                </div>
+                <div class="mx-md-5">
+                    <p class="display-6 text-center text-md-start mx-md-5">
+                        I'm a second-year Bachelor of Science in Computer Science (BSCS) student with a growing passion 
+                        for coding and building practical applications. I enjoy solving real-world problems using technology 
+                        and love learning new tools and frameworks that enhance user experience and functionality.
+                    </p>
+                </div>
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Education Section -->
+                        <div class="col-12 col-md-6 col-lg-4 p-3 mb-3">
+                            <div class="rounded-4 border ms-md-3 p-3 h-100">
+                                <p class="h2 fw-bold text-primary">Education</p>
+                                <p class="fs-5">Currently pursuing a Bachelor of Science in Computer Science – Expected Graduation: 2027</p>
+                            </div>               
+                        </div>
 
-                <!-- Toggler -->
-                <button class="navbar-toggler ms-2 my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <!-- Hobbies & Interests Section -->
+                        <div class="col-12 col-md-6 col-lg-4 p-3 mb-3">
+                            <div class="rounded-4 border ms-md-3 p-3 h-100">
+                                <p class="h2 fw-bold text-primary">Hobbies & Interests</p>
+                                <ul class="list-group mb-4">
+                                    <li class="list-group-item">🎮 Gaming – I enjoy both relaxing and strategic games</li>
+                                    <li class="list-group-item">📖 Reading novels – Especially web novels with unique, non-harem romance plots and TS novels</li>
+                                    <li class="list-group-item">💻 Coding – I love turning ideas into working projects</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                        <!-- Personal Goals Section -->
+                        <div class="col-12 col-md-6 col-lg-4 p-3 mb-3">
+                            <div class="rounded-4 border ms-md-3 p-3 h-100">
+                                <p class="h2 fw-bold text-primary">Personal Goals</p>
+                                <ul class="list-group mb-4">
+                                    <li class="list-group-item">👨‍💻 Improve my programming skills and land a job in the tech industry</li>
+                                    <li class="list-group-item">🏍️ Save up for and buy a motorcycle</li>
+                                    <li class="list-group-item">✈️ Travel and explore new places once I have the chance</li>
+                                </ul>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="text-center py-3 border-top">
+            <small class="text-muted">© 2025 Anthony Amiluddin, CS50x PSET 8 Homepage.</small>
+        </footer>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>

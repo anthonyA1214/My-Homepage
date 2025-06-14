@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 [data-bs-theme="dark"] {
   --bs-body-bg: #121212; 
   --bs-border-color: #333;     
@@ -141,11 +143,12 @@ html[data-bs-theme="dark"] .navbar-toggler:hover {
   color: #6ea8fe
 }
 
-@media (max-width: 500px) {
-  .display-1 {
-    font-size: 2.5rem !important; 
-  }
-  .fs-4 {
-    font-size: 1rem !important;
-  }
+.display-1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.fs-4 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: 'Roboto', sans-serif;
 }
