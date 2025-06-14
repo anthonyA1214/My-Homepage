@@ -1,0 +1,53 @@
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;         /* softer than pure black */
+  --bs-border-color: #333;       /* subtle borders */
+}
+
+@media (min-width: 992px) {
+    #navbarNav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        border-radius: 50rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+  #navbarNav {
+    border-radius: 0; /* remove rounding */
+  }
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+html[data-bs-theme="light"] .navbar-toggler:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: #ccc;
+}
+
+html[data-bs-theme="dark"] .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255 0.5);
+  border-color: #666;
+}
+
+.navbar-toggler {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease;
+}
+
+/* Soft hover color */
+.navbar-nav .nav-link:hover {
+    color: #6ea8fe !important; /* light blue */
+}
+
+/* Soft active link color */
+.navbar-nav .nav-link.active {
+    color: #0d6efd !important; /* slightly different soft blue */
+}
